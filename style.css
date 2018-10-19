@@ -24,6 +24,20 @@ body {
   z-index: 2;
 }
 
+#log_contain {
+  display: flex;
+  flex-direction: column;
+}
+
+#btn_log {
+  width: 200px;
+  margin: auto;
+}
+
+#new_user {
+  margin: 20px auto 0 auto;
+}
+
 h1 {
   line-height: 60px;
 }
@@ -65,6 +79,7 @@ h2 {
 
 .modal-content {
   border-radius: 30px;
+  font-family: Comfortaa, Arial;
 }
 
 .custom-control {
