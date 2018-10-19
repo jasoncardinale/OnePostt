@@ -1,0 +1,110 @@
+body {
+  background: rgb(241,243,206);
+  background: -moz-linear-gradient(164deg, rgba(241,243,206,1) 0%, rgba(241,243,206,1) 48%, rgba(0,0,0,1) 48%, rgba(255,217,128,1) 48.5%, rgba(255,204,66,1) 75%);
+  background: -webkit-linear-gradient(164deg, rgba(241,243,206,1) 0%, rgba(241,243,206,1) 48%, rgba(0,0,0,1) 48%, rgba(255,217,128,1) 48.5%, rgba(255,204,66,1) 75%);
+  background: linear-gradient(164deg, rgba(241,243,206,1) 0%, rgba(241,243,206,1) 48%, rgba(0,0,0,1) 48%, rgba(255,217,128,1) 48.5%, rgba(255,204,66,1) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f3ce",endColorstr="#ffcc42",GradientType=1);
+}
+
+.content {
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+  background-color: white;
+  border-radius: 50px;
+  font-family: Comfortaa;
+  z-index: 1;
+}
+
+.content_contain {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 2;
+}
+
+h1 {
+  line-height: 60px;
+}
+
+#joinNow {
+  margin: 2%;
+}
+
+.btn {
+  border-radius: 30px;
+}
+
+.nav-item {
+    border-radius: 20px;
+    text-align: center;
+}
+
+.nav-link {
+  margin: 0px 10px 0px 10px;
+  white-space: nowrap;
+}
+
+.navbar-brand {
+  padding: 0px 50px 0px 10px;
+  width: 150px;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+.subDescription {
+  margin-left: 10%;
+}
+
+.modal-content {
+  border-radius: 30px;
+}
+
+.custom-control {
+  padding: 10px 0px 10px 25px;
+}
+
+form button {
+  width: 100px;
+}
+
+footer {
+  background-color: rgba(241,243,206,1);
+}
+
+#socialMedia {
+  display: flex;
+}
+
+#socialMedia a {
+  color: black;
+  margin: 0 5px 0 5px;
+}
+
+#socialMedia i:hover {
+  margin-top: -2.5px;
+  transition: .25s;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
