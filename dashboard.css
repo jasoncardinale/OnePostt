@@ -89,37 +89,54 @@ body {
   flex: 1 1 auto;
   margin: 10px;
   padding: 20px 30px 20px 30px;
-  font-family: 'Montserrat', Arial;
+  font-family: Comfortaa, Arial;
   text-align: center;
   text-transform: uppercase;
   transition: 0.75s;
   background-size: 200% auto;
   color: white;
+  border-radius: 50px;
+  text-decoration: none;
  }
 
 .btn_plat_select:hover {
-  background-position: right center;
   color: white;
+  text-decoration: none;
 }
 
 #fb_select {
-  background-image: linear-gradient(to right, #3B5998  0%, #8fd3f4 50%, #3B5998  100%);
+  border: 5px solid #3B5998;
+  color: #3B5998;
+  font-weight: bold;
+  //background-image: linear-gradient(to right, #3B5998  0%, #8fd3f4 50%, #3B5998  100%);
 }
 
 #tw_select {
-  background-image: linear-gradient(to right, #1da1f2 0%, #a1c4fd 50%, #1da1f2 100%);
+  border: 5px solid #1da1f2;
+  color: #1da1f2;
+  font-weight: bold;
+  //background-image: linear-gradient(to right, #1da1f2 0%, #a1c4fd 50%, #1da1f2 100%);
 }
 
 #ins_select {
-  background-image: linear-gradient(to right, #5851db 0%, #e1306c 50%, #5851db 100%);
+  border: 5px solid #e1306c;
+  color: #e1306c;
+  font-weight: bold;
+  //background-image: linear-gradient(to right, #5851db 0%, #e1306c 50%, #5851db 100%);
 }
 
 #pin_select {
-  background-image: linear-gradient(to right, #bd081c 0%, #fb9da8 50%, #bd081c 100%);
+  border: 5px solid #bd081c;
+  color: #bd081c;
+  font-weight: bold;
+  //background-image: linear-gradient(to right, #bd081c 0%, #fb9da8 50%, #bd081c 100%);
 }
 
-#red_select {
-  background-image: linear-gradient(to right, #ff4500 0%, #fcb69f 50%, #ff4500 100%);
+#tum_select {
+  border: 5px solid #ff4500;
+  color: #ff4500;
+  font-weight: bold;
+  //background-image: linear-gradient(to right, #ff4500 0%, #fcb69f 50%, #ff4500 100%);
 }
 
 .dashboardContainerHoriz {
