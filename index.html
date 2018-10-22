@@ -48,7 +48,7 @@
     <div class="content shadow-lg p-3 mb-5">
       <div class="content_contain">
         <h1><strong>OnePostt</strong> enhances<br> your social media presence.</h1>
-        <a id="joinNow" href="signup.html" class="btn btn-success btn-lg">Join Now</a>
+        <a id="joinNow" href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target="#signupModal">Join Now</a>
         <a href="learn.html" class="btn btn-secondary btn-lg">Learn More</a>
         <h2>What is OnePostt?</h2>
         <p>Running a business is a very difficult task. While social media can
@@ -128,14 +128,13 @@
               <div class="form-group signup">
                 <input type="password" class="form-control" id="inputPassword" placeholder="Create a Password">
               </div>
-              <a href="#" style="text-decoration: none">Already have an account?</a>
+              <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Already have an account?</a>
               <div class="custom-control custom-checkbox mr-sm-2">
                 <input type="checkbox" class="custom-control-input" id="exampleCheck1">
                 <label class="custom-control-label" for="exampleCheck1">Remember me</label>
               </div>
               <div id="log_contain">
                 <button id="btn_sign" type="submit" class="btn btn-success">Sign Up</button>
-                <a id="new_user" href="#" style="text-decoration: none">New User?</a>
               </div>
             </form>
           </div>
@@ -163,12 +162,12 @@
               </div>
               <a href="#" style="text-decoration: none">Forgot your password?</a>
               <div class="custom-control custom-checkbox mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="exampleCheck1">
-                <label class="custom-control-label" for="exampleCheck1">Remember me</label>
+                <input type="checkbox" class="custom-control-input" id="exampleCheck2">
+                <label class="custom-control-label" for="exampleCheck2">Remember me</label>
               </div>
               <div id="log_contain">
                 <button id="btn_log" type="submit" class="btn btn-success">Log In</button>
-                <a id="new_user" href="#" style="text-decoration: none">New User?</a>
+                <a id="new_user" href="#" style="text-decoration: none" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">New User?</a>
               </div>
             </form>
           </div>

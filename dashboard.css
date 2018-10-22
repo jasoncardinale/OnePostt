@@ -100,43 +100,114 @@ body {
  }
 
 .btn_plat_select:hover {
-  color: white;
   text-decoration: none;
+  margin-top: 2.5px;
+  transition: .25s;
 }
 
-#fb_select {
+.fb {
   border: 5px solid #3B5998;
   color: #3B5998;
   font-weight: bold;
   //background-image: linear-gradient(to right, #3B5998  0%, #8fd3f4 50%, #3B5998  100%);
 }
 
-#tw_select {
+.fb:hover {
+  color: #3B5998;
+}
+
+.fb_selected {
+  color: white;
+  background-color: #3B5998;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.fb_selected:hover {
+  color: white;
+}
+
+.tw {
   border: 5px solid #1da1f2;
   color: #1da1f2;
   font-weight: bold;
   //background-image: linear-gradient(to right, #1da1f2 0%, #a1c4fd 50%, #1da1f2 100%);
 }
 
-#ins_select {
+.tw:hover {
+  color: #1da1f2;
+}
+
+.tw_selected {
+  color: white;
+  background-color: #1da1f2;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.tw_selected:hover {
+  color: white;
+}
+
+.ins {
   border: 5px solid #e1306c;
   color: #e1306c;
   font-weight: bold;
   //background-image: linear-gradient(to right, #5851db 0%, #e1306c 50%, #5851db 100%);
 }
 
-#pin_select {
+.ins:hover {
+  color: #e1306c;
+}
+
+.ins_selected {
+  color: white;
+  background-color: #e1306c;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.ins_selected:hover {
+  color: white;
+}
+
+.pin {
   border: 5px solid #bd081c;
   color: #bd081c;
   font-weight: bold;
   //background-image: linear-gradient(to right, #bd081c 0%, #fb9da8 50%, #bd081c 100%);
 }
 
-#tum_select {
-  border: 5px solid #ff4500;
-  color: #ff4500;
+.pin:hover {
+  color: #bd081c;
+}
+
+.pin_selected {
+  color: white;
+  background-color: #bd081c;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.pin_selected:hover {
+  color: white;
+}
+
+.tum {
+  border: 5px solid #34526f;
+  color: #34526f;
   font-weight: bold;
-  //background-image: linear-gradient(to right, #ff4500 0%, #fcb69f 50%, #ff4500 100%);
+  //background-image: linear-gradient(to right, #34526f 0%, #fcb69f 50%, #34526f 100%);
+}
+
+.tum:hover {
+  color: #34526f;
+}
+
+.tum_selected {
+  color: white;
+  background-color: #34526f;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.tum_selected:hover {
+  color: white;
 }
 
 .dashboardContainerHoriz {
