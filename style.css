@@ -34,8 +34,18 @@ body {
   margin: auto;
 }
 
+#btn_sign {
+  width: 200px;
+  margin: auto;
+}
+
 #new_user {
   margin: 20px auto 0 auto;
+}
+
+#loginIcon {
+  margin-left: 38%;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -84,6 +94,10 @@ h2 {
 
 .custom-control {
   padding: 10px 0px 10px 25px;
+}
+
+.signup {
+  padding: 5px 0 5px 0;
 }
 
 form button {

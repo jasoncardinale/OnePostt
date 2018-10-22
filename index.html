@@ -37,7 +37,7 @@
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="signup.html">Sign Up</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
           </li>
           <li class="nav-item">
             <button type='button' style="width: 100px" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Log In</button>
@@ -105,6 +105,41 @@
     <div class="content shadow-lg p-3 mb-5" style="margin-top: 0">
       <div class="content_contain">
         <h1>News & Updates</h1>
+      </div>
+    </div>
+    <div id="signupModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img id="oneposttLogo" src="Logos/OnePosttLogo/OnePosttLogo_white_background.png" width="100px" height="100px">
+            <h4 style="padding: 10px; margin: 5% 0 0 18%">Sign Up</h4>
+            <button type="button" class="close" data-dismiss="modal"> &times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <h5 style="text-align: center; padding: 20px;">Sign up with 3 easy steps!</h5>
+              <img id="loginIcon" src="Logos/OnePosttLogo/login_icon.gif" width="100px" height="100px">
+              <div class="form-group signup">
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email address">
+              </div>
+              <div class="form-group signup">
+                <input type="text" class="form-control" id="inputUsername" aria-describedby="usernameHelp" placeholder="Username">
+              </div>
+              <div class="form-group signup">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Create a Password">
+              </div>
+              <a href="#" style="text-decoration: none">Already have an account?</a>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="exampleCheck1">
+                <label class="custom-control-label" for="exampleCheck1">Remember me</label>
+              </div>
+              <div id="log_contain">
+                <button id="btn_sign" type="submit" class="btn btn-success">Sign Up</button>
+                <a id="new_user" href="#" style="text-decoration: none">New User?</a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <div id="loginModal" class="modal fade" role="dialog">
