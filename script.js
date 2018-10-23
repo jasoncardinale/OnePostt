@@ -79,8 +79,9 @@ function convertToTweet() {
     for(var i = 0; i < arr.length; i++) {
       result += arr[i] + ".";
     }
-    document.getElementById("twHead").innerHTML = heading;
-    document.getElementById("twPost").innerHTML = result;
-    console.log(result.length);
   }
+  $("#twitterContainer").css("display", "inherit");
+  document.getElementById("twHead").innerHTML = heading;
+  document.getElementById("twPost").innerHTML = result;
+  console.log(result.length);
 }
