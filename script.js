@@ -20,9 +20,8 @@ $(document).ready(function() {
   });
 });
 
-var twitter = $("#tw_select").hasClass("tw_selected");
-
 function convert() {
+  var twitter = $("#tw_select").hasClass("tw_selected");
   if(twitter) {
     convertToTweet();
   }
