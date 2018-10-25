@@ -62,16 +62,15 @@ function convertToTweet() {
   var tagResults = "";
   sentences = post.split(".");
   key_words_init = heading.split(" ");
-  key_words = [];
   tag_list = tags.split(", ");
-
+  /*
   for(int i = 0; i < key_words_init.length; i++) {
     for(int j = 0; j < not_key.length; j++) {
       if(key_words_init[i].toLowerCase() != not_key[j].toLowerCase()) {
         key_words.push(key_words_init[i]);
       }
     }
-  }
+  }*/
   /*
   for(var i = 0; i < sentences.length-1; i++) {
     var words = sentences[i].split(" ");
