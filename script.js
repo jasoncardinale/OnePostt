@@ -72,7 +72,7 @@ function convertToTweet() {
       }
     }
   }
-  /*
+  
   for(var i = 0; i < sentences.length-1; i++) {
     var words = sentences[i].split(" ");
     for(var j = 0; j < words.length; j++) {
@@ -89,7 +89,7 @@ function convertToTweet() {
 
   for(var i = 0; i < arr.length; i++) {
     result += arr[i];
-  }*/
+  }
   while(result.length > 280) {
     arr = [];
     count = 0;
