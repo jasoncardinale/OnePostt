@@ -61,7 +61,7 @@ function convertToTweet() {
   var result = "";
   var tagResults = "";
   sentences = post.split(".");
-  key_words_init = heading.split(" ");
+  key_words = heading.split(" ");
   tag_list = tags.split(", ");
   /*
   for(int i = 0; i < key_words_init.length; i++) {
@@ -71,7 +71,7 @@ function convertToTweet() {
       }
     }
   }*/
-  /*
+
   for(var i = 0; i < sentences.length-1; i++) {
     var words = sentences[i].split(" ");
     for(var j = 0; j < words.length; j++) {
