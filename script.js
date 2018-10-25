@@ -88,7 +88,7 @@ function convertToTweet() {
 
   for(var i = 0; i < arr.length; i++) {
     result += arr[i];
-  }*/
+  }
   while(result.length > 280) {
     arr = [];
     count = 0;
