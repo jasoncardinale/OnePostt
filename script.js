@@ -22,23 +22,44 @@ $(document).ready(function() {
 
 function convert() {
   var twitter = $("#tw_select").hasClass("tw_selected");
+  var facebook = $("#fb_select").hasClass("fb_selected");
+  var instagram = $("#ins_select").hasClass("ins_selected");
+  var pinterest = $("#pin_select").hasClass("pin_selected");
+  var tumblr = $("#tum_select").hasClass("tum_selected");
+
   if(twitter) {
     convertToTweet();
+  }
+  if(facebook) {
+    convertToFacebook();
+  }
+  if(instagram) {
+    convertToInstagram();
+  }
+  if(pinterest) {
+    convertToPinterest();
+  }
+  if(tumblr) {
+    convertToTumblr();
   }
 }
 
 function convertToTweet() {
   var heading = document.getElementById("edit_heading").value;
   var post = document.getElementById("edit_content").value;
+  var tags = document.getElementById("edit_tag").value;
   var current = 0;
   var count = 0;
   var characters = 0;
   var sentences = [];
   var key_words = [];
+  var tag_list = [];
   var arr = [];
   var result = "";
+  var tagResults = "";
   sentences = post.split(".");
   key_words = heading.split(" ");
+  tag_list = tags.split(", ");
 
   for(var i = 0; i < sentences.length-1; i++) {
     var words = sentences[i].split(" ");
@@ -80,8 +101,29 @@ function convertToTweet() {
       result += arr[i] + ".";
     }
   }
+  for(var i = 0; i < tag_list.length; i++) {
+    tagResults += "#" + tag_list[i] + " ";
+  }
+
   $("#twitterContainer").css("display", "inherit");
   document.getElementById("twHead").innerHTML = heading;
   document.getElementById("twPost").innerHTML = result;
+  document.getElementById("twTags").innerHTML = tagResults;
   console.log(result.length);
+}
+
+function convertToFacebook() {
+
+}
+
+function convertToInstagram() {
+
+}
+
+function convertToPinterest() {
+
+}
+
+function convertToTumblr() {
+
 }
