@@ -1,3 +1,9 @@
+
+var heading = document.getElementById("edit_heading").value;
+var post = document.getElementById("edit_content").value;
+var tags = document.getElementById("edit_tag").value;
+var not_key = ["the", "and", "a", "an", "it"];
+
 $(document).ready(function() {
   $('#fb_select').click(function(){
     $( "#fb_select" ).toggleClass("fb_selected");
@@ -45,9 +51,6 @@ function convert() {
 }
 
 function convertToTweet() {
-  var heading = document.getElementById("edit_heading").value;
-  var post = document.getElementById("edit_content").value;
-  var tags = document.getElementById("edit_tag").value;
   var current = 0;
   var count = 0;
   var characters = 0;
@@ -58,9 +61,18 @@ function convertToTweet() {
   var result = "";
   var tagResults = "";
   sentences = post.split(".");
-  key_words = heading.split(" ");
+  key_words_init = heading.split(" ");
+  key_words = [];
   tag_list = tags.split(", ");
 
+  for(int i = 0; i < key_words_init.length; i++) {
+    for(int j = 0; j < not_key.length; j++) {
+      if(key_words_init[i].toLowerCase() != not_key[j].toLowerCase()) {
+        key_words.push(key_words_init[i]);
+      }
+    }
+  }
+  /*
   for(var i = 0; i < sentences.length-1; i++) {
     var words = sentences[i].split(" ");
     for(var j = 0; j < words.length; j++) {
@@ -77,7 +89,7 @@ function convertToTweet() {
 
   for(var i = 0; i < arr.length; i++) {
     result += arr[i];
-  }
+  }*/
   while(result.length > 280) {
     arr = [];
     count = 0;
