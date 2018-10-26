@@ -1,5 +1,4 @@
 
-
 $(document).ready(function() {
   $('#fb_select').click(function(){
     $( "#fb_select" ).toggleClass("fb_selected");
@@ -45,14 +44,13 @@ function convertToTweet() {
   var tag_list = tags.split(", ");
   var key_words = [];
 
-  /*
-  for(int i = 0; i < key_words_init.length; i++) {
-    for(int j = 0; j < not_key.length; j++) {
+  for(var i = 0; i < key_words_init.length; i++) {
+    for(var j = 0; j < not_key.length; j++) {
       if(key_words_init[i].toLowerCase() != not_key[j].toLowerCase()) {
         key_words.push(key_words_init[i]);
       }
     }
-  }*/
+  }
 
 
   for(var i = 0; i < sentences.length-1; i++) {
